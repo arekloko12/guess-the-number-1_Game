@@ -121,7 +121,6 @@ def level_1():
                 break
             elif trying > 0:
                 print("Invalid input! Try again.")
-                print("trying: ",trying)
                 trying -= 1
                 continue
             elif trying == 0:
@@ -153,7 +152,6 @@ def level_1():
                         break
                     elif trying > 0:
                         print("Invalid input! Try again. ")
-                        print("trying: ",trying)
                         trying -= 1
                         continue
                     elif trying <= 0:
@@ -196,7 +194,6 @@ def level_2():
                 break
             elif trying > 0:
                 print("Invalid input! Try again.")
-                print("trying: ",trying)
                 trying -= 1
                 continue
             elif trying == 0:
@@ -228,7 +225,6 @@ def level_2():
                         break
                     elif trying > 0:
                         print("Invalid input! Try again. ")
-                        print("trying: ",trying)
                         trying -= 1
                         continue
                     elif trying <= 0:
@@ -270,7 +266,6 @@ def level_3():
                 break
             elif trying > 0:
                 print("Invalid input! Try again.")
-                print("trying: ",trying)
                 trying -= 1
                 continue
             elif trying == 0:
@@ -302,7 +297,6 @@ def level_3():
                         break
                     elif trying > 0:
                         print("Invalid input! Try again. ")
-                        print("trying: ",trying)
                         trying -= 1
                         continue
                     elif trying <= 0:
@@ -344,7 +338,6 @@ def level_4():
                 break
             elif trying > 0:
                 print("Invalid input! Try again.")
-                print("trying: ",trying)
                 trying -= 1
                 continue
             elif trying == 0:
@@ -376,7 +369,6 @@ def level_4():
                         break
                     elif trying > 0:
                         print("Invalid input! Try again. ")
-                        print("trying: ",trying)
                         trying -= 1
                         continue
                     elif trying <= 0:
@@ -419,7 +411,6 @@ def level_5():
                 break
             elif trying > 0:
                 print("Invalid input! Try again.")
-                print("trying: ",trying)
                 trying -= 1
                 continue
             elif trying == 0:
@@ -451,7 +442,6 @@ def level_5():
                         break
                     elif trying > 0:
                         print("Invalid input! Try again. ")
-                        print("trying: ",trying)
                         trying -= 1
                         continue
                     elif trying <= 0:
