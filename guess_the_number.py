@@ -57,6 +57,8 @@ def start_game():
     print("----------------------------------------")
     global level_selection
     trying = 10
+
+    # choice of game difficulty level by the user
     for i in range(10):
         level_selection = input("Choose a level:\n1 - easy,\n2 - medium,\n3 - hard,\n4 - very hard,\n5 - imposible\n")
         trying -= 1
@@ -73,6 +75,7 @@ def start_game():
             print("------------------------------------")
             app_close()
 
+        # checking which level of the game the user has chosen
         if level_selection == 1:
             level_1()
         elif level_selection == 2:
@@ -103,7 +106,7 @@ def level_1():
     trying = 10
 
     
-    #checking number; user number == number drawn
+    # checking the correctness of the data entered by the user; whether the user has entered anything, whether it is a number or not
     for i in range(20):
         trying = 10
 
@@ -131,7 +134,6 @@ def level_1():
                 app_close()
             
         for i in range(20):
-
             if user_number == rand_number:
                 print("_________________________________________________")
                 print("Congratulations! You guessed the right number.")
@@ -176,7 +178,7 @@ def level_2():
     trying = 10
 
     
-    #checking number; user number == number drawn
+    # checking the correctness of the data entered by the user; whether the user has entered anything, whether it is a number or not
     for i in range(20):
         trying = 10
 
@@ -248,7 +250,7 @@ def level_3():
     rand_number = random.randint(1, 100)
     trying = 10
 
-    #checking number; user number == number drawn
+    # checking the correctness of the data entered by the user; whether the user has entered anything, whether it is a number or not
     for i in range(20):
         trying = 10
 
@@ -320,7 +322,7 @@ def level_4():
     trying = 10
 
     
-    #checking number; user number == number drawn
+    # checking the correctness of the data entered by the user; whether the user has entered anything, whether it is a number or not
     for i in range(20):
         trying = 10
 
@@ -393,7 +395,7 @@ def level_5():
     trying = 10
 
     
-    #checking number; user number == number drawn
+    # checking the correctness of the data entered by the user; whether the user has entered anything, whether it is a number or not
     for i in range(20):
         trying = 10
 
@@ -463,6 +465,7 @@ def hint():
     checking_number_2 = 0
     number_table = []
 
+    # checking which level of the game the user has chosen
     if level_selection == 1:
         i = 10
     elif level_selection == 2:
@@ -474,6 +477,7 @@ def hint():
     elif level_selection == 5:
         i = 1000
 
+    # checking which numbers are divisible by the number drawn by the computer
     if attempts > 1:
         for i in range(i):
             if rand_number % checking_number_1 == 0 and rand_number != checking_number_1:
@@ -485,6 +489,7 @@ def hint():
                 continue
 
         print("Number is divisible by ",number_table)
+    # second clue to the number; the number is less than or equal to
     elif attempts == 1:
         for i in range(i):
             if rand_number <= checking_number_2:
