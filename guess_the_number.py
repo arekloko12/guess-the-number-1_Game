@@ -252,7 +252,6 @@ def level_3():
     rand_number = random.randint(1, 100)
     trying = 10
 
-    
     #checking number; user number == number drawn
     for i in range(20):
         trying = 10
