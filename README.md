@@ -1,6 +1,6 @@
 # My #1 game in python
 
-
+---
 
 ```Powershell
 print("Hello everyone")
